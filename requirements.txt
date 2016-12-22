@@ -1,0 +1,9 @@
+tensorflow
+numpy
+libtorrent 
+# via 
+# sudo apt-get install python-libtorrent
+# or
+# sudo apt-get install python3-libtorrent
+# or
+# sudo brew install libtorrent
