@@ -1,6 +1,8 @@
 # Tensorpeers
 P2P peer-to-peer training of deep learning [tensorflow](https://github.com/tensorflow/tensorflow) models
 
+Not to be confused with [locally distributed training](https://www.tensorflow.org/how_tos/distributed/)
+
 ## Community Power
 In the Golden age of deep learning, baidu and others have shown that training time can scale almost linearly with the number of GPUs.
 This gives large corporations an advantage over startups in the run for the best A.I. systems ... until now.

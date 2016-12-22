@@ -13,6 +13,7 @@ except:
 	pip install python-libtorrent DOESN'T WORK! use one of the above!
 	building boost dependency might take a while
 """)
+
 	exit(0)
 	# alternatives to libtorrent:
 	# https://github.com/Blender3D/torrent not a functional replacement yet (but pure python)
@@ -24,6 +25,7 @@ def upload(model_name, path, checkpoint_nr):
 	lt.add_files(fs, path +"/" + checkpoint_nr)
 	t = lt.create_torrent(fs)
 	t.add_tracker("udp://tracker.openbittorrent.com:80/announce", 0)
+	# t.add_tracker("udp://tracker.pannous.com:80/announce", 0) # see pytt
 	t.set_creator('libtorrent %s' % lt.version)
 	t.set_comment("checkpoint: " + checkpoint_nr)
 	lt.set_piece_hashes(t, ".")
