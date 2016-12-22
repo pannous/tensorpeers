@@ -1,7 +1,7 @@
 # purpose of 'master tracker servers':
 
-# keeps the *best* model up to date
-# serves the current model to peers
+# keeps the *best* checkpoint up to date
+# serves the current model checkpoint state to peers
 # download the progress of other peers
 # validate their claimed accuracy
 # reject checkpoints which are too far behind
