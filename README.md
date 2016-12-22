@@ -12,6 +12,13 @@ The architecture has to be slightly different from existing 'parameter server' s
 
 To speed things up, we base this project on python-libtorrent.
 
+## Install dependency:
+MAC:
+`brew install libtorrent-rasterbar --with-python`
+LINUX:
+`apt-get install python-libtorrent` or
+`apt-get install python3-libtorrent`
+
 ## Open questions
 This is a wildly wide open research area, so if you want to make the world a better place (and or need a PhD thesis):
 Herewith you have full leverage.
