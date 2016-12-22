@@ -140,7 +140,7 @@ def run_app(port):
         (r"/scrape.*", ScrapeHandler),
         (r"/", TrackerStats),
     ])
-    logging.info('Starting Pytt on port %d' % port)
+    logging.info('Starting Pytt tracker on port %d' % port)
     http_server = tornado.httpserver.HTTPServer(tracker)
     http_server.listen(port)
     tornado.ioloop.IOLoop.instance().start()

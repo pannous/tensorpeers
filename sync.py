@@ -53,11 +53,11 @@ def upload(model_name, path, checkpoint_nr):
 		time.sleep(1)
 
 
-def download_current(model_name):
+def download(model_name, checkpoint="current"):
 	ses = lt.session()
 	ses.listen_on(6881, 6891)
 
-	e = lt.bdecode(open(model_name+"_current.torrent", 'rb').read())
+	e = lt.bdecode(open(model_name+"_"+checkpoint+".torrent", 'rb').read())
 	info = lt.torrent_info(e)
 
 	params = {'save_path': '.', 'storage_mode': lt.storage_mode_t.storage_mode_sparse, 'ti': info}
